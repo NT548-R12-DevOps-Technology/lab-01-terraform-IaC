@@ -1,0 +1,8 @@
+# Copy this file to backend.hcl after terraform/bootstrap has been applied.
+# Replace the bucket and DynamoDB table with the bootstrap outputs.
+
+bucket         = "REPLACE_WITH_STATE_BUCKET_NAME"
+key            = "lab-01/dev/terraform.tfstate"
+region         = "ap-southeast-1"
+dynamodb_table = "REPLACE_WITH_LOCK_TABLE_NAME"
+encrypt        = true

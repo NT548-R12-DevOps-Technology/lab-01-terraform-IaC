@@ -1,0 +1,31 @@
+# Locally generated SSH keys for the lab.
+/key_pair/
+/key_pair
+
+# Local AWS CLI test configuration.
+/testcases/.env
+
+# Local Terraform cache, state and plans (can contain sensitive data).
+.terraform/
+*.tfstate
+*.tfstate.*
+*.tfvars
+*.tfvars.json
+*.tfplan
+crash.log
+crash.*.log
+.terraform.tfstate.lock.info
+
+# Credentials and private keys must remain outside version control.
+*.pem
+*.key
+*.ppk
+id_rsa
+id_ed25519
+.env
+.env.*
+
+# Share configuration templates and provider lock files.
+!terraform.tfvars.example
+!.terraform.lock.hcl
+!testcases/.env.example
